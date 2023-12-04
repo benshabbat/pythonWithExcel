@@ -14,6 +14,10 @@ wb=load_workbook('data.xlsx')
 # Create a active worksheet
 ws = wb.active
 
+# Set a variable
+
+name = ws["A2"].value
+city =ws["B2"].value
 
 # Print something from our Spreadsheet
-print(ws["A2"].value)
+print(f'{name}:{city}')
