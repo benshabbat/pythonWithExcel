@@ -13,3 +13,7 @@ wb=load_workbook('data.xlsx')
 
 # Create a active worksheet
 ws = wb.active
+
+
+# Print something from our Spreadsheet
+print(ws["name"].value)
