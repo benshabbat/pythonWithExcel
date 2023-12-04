@@ -16,4 +16,4 @@ ws = wb.active
 
 
 # Print something from our Spreadsheet
-print(ws["name"].value)
+print(ws["A2"].value)
