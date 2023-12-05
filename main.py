@@ -15,9 +15,12 @@ wb=load_workbook('data.xlsx')
 ws = wb.active
 
 # Set a variable
-
 name = ws["A2"].value
 city =ws["B2"].value
 
 # Print something from our Spreadsheet
 print(f'{name}:{city}')
+
+# Grab a whole columns
+column_a = ws["A"]
+
