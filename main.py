@@ -30,3 +30,9 @@ for cell in column_a:
     
 # Grab a range
 range= ws["A2:B10"]
+
+
+# For loop
+for cell in range:
+    for i in cell:
+        print(i.value)
