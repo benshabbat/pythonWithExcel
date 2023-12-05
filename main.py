@@ -26,4 +26,7 @@ column_a = ws["A"]
 
 # For loop
 for cell in column_a:
-    print(f'{cell.value}')
+    print(cell.value)
+    
+# Grab a range
+range= ws["A2:B10"]
