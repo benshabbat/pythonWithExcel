@@ -24,3 +24,6 @@ print(f'{name}:{city}')
 # Grab a whole columns
 column_a = ws["A"]
 
+# For loop
+for cell in column_a:
+    print(f'{cell.value}')
