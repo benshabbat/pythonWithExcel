@@ -36,3 +36,8 @@ range= ws["A2:B10"]
 for cell in range:
     for i in cell:
         print(i.value)
+        
+        
+# Display sheets
+sheets= wb.sheetnames 
+print(sheets)      
