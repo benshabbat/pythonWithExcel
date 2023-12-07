@@ -41,3 +41,6 @@ for cell in range:
 # Display sheets
 sheets= wb.sheetnames 
 print(sheets)      
+
+sheet1= wb['sheet1']
+rows = sheet1.max_rows
