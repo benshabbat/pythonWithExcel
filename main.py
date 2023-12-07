@@ -7,6 +7,14 @@ import os
 wb= Workbook()
 
 
+# Create a new xlsx file
+filepath = 'data.xlsx'
+    
+if not os.path.exists(filepath):
+    sheet = wb.active
+    wb.save(filepath)
+    
+    
 # load existing spreadsheet
 wb=load_workbook('data.xlsx')
 
