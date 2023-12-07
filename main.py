@@ -43,4 +43,5 @@ sheets= wb.sheetnames
 print(sheets)      
 
 sheet1= wb['sheet1']
-rows = sheet1.max_rows
+rows = sheet1.max_row
+columns = sheet1.max_column
