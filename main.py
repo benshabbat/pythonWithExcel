@@ -42,6 +42,14 @@ for cell in range:
 sheets= wb.sheetnames 
 print(sheets)      
 
+# Get sheet
 sheet1= wb['sheet1']
+
+# Get max rows and columns
 rows = sheet1.max_row
 columns = sheet1.max_column
+
+#Get Data 
+for i in range(1,rows+1):
+    for j in range(1,columns+1):
+        print(sheet1.cell(i,j).value)
