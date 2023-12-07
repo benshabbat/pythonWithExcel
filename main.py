@@ -1,6 +1,6 @@
 from openpyxl.workbook import Workbook
 from openpyxl import load_workbook
-
+import os
 
 
 # Create a new workbook object
@@ -53,3 +53,5 @@ columns = sheet1.max_column
 for i in range(1,rows+1):
     for j in range(1,columns+1):
         print(sheet1.cell(i,j).value)
+        
+wb.save('data.xlsx')        
