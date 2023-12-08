@@ -64,3 +64,5 @@ for i in range(1,rows+1):
         print(sheet1.cell(i,j).value)
         
 wb.save('data.xlsx')        
+
+sheet1["A1"].fill=PatternFill
