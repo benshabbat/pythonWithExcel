@@ -65,4 +65,7 @@ for i in range(1,rows+1):
         
 wb.save('data.xlsx')        
 
-sheet1["A1"].fill=PatternFill
+sheet1["A1"].value = "pass"
+sheet1["A1"].fill=PatternFill("solid",fgColor="#55FF33")
+sheet1["A2"].value = "fail"
+sheet1["A2"].fill=PatternFill("solid",fgColor="#FF3346")
