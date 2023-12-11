@@ -5,4 +5,9 @@ df = pd.read_excel(r'C:\Users\bensh\OneDrive\שולחן העבודה\pythonWithE
 # Get all Data
 results = df.iloc[:]
 
+# print(results)
+
+# Get by filter
+results = df[df["קוד"].str.match("אדום")]
+
 print(results)
