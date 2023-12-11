@@ -12,6 +12,11 @@ results = df.iloc[:]
 
 
 # Get by contains
-results = df[df["קוד"].str.contains("ו")]
+# results = df[df["קוד"].str.contains("ו")]
 
-print(results)
+# print(results)
+
+# Get group by
+
+res = df.groupby("קוד")
+print(res.get_group("אדום"))
