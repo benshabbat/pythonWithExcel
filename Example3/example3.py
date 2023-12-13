@@ -9,6 +9,10 @@ sheet = wk.sheets("Sheet")
 
 #Get data from dataframe
 df= sheet.range("A1:D3").options(pd.DataFrame).value
+
+#how much lines of data
+df=df[:2]
+
 #insert data to table
 xw.view(df)
 
