@@ -9,5 +9,5 @@ sheet = wk.sheets("Sheet")
 
 
 df= sheet.range("A1:D3").options(pd.DataFrame).value
-
+xw.view(df)
 print(df)
