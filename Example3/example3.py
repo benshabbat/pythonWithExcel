@@ -7,7 +7,11 @@ sheet = wk.sheets("Sheet")
 # rg= sheet.range("A1:B3")
 # print(rg.value)
 
-
+#Get data from dataframe
 df= sheet.range("A1:D3").options(pd.DataFrame).value
+#insert data to table
 xw.view(df)
+
 print(df)
+
+wk.close
